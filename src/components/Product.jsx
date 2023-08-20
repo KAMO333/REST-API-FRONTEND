@@ -14,7 +14,7 @@ const Product = ({ product, getProducts }) => {
 
     if (result.isConfirmed) {
       try {
-        await axios.delete(`http://localhost:3000/api/products/${id}`);
+        await axios.delete(`https://node-api-v2-z2cv.onrender.com/api/products/${id}`);
         toast.success("Delete a Product Successfully");
         getProducts();
       } catch (error) {
