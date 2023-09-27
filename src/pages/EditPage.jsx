@@ -18,6 +18,7 @@ const EditPage = () => {
   const getProduct = async () => {
     setIsLoading(true);
     try {
+
       const response = await axios.get(`https://node-api-v2-z2cv.onrender.com/api/products/${id}`);
       setProduct({
         name: response.data.name,
